@@ -7,21 +7,32 @@
 }
 
 body {
-
+    width: 960px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
 }
 
 header {
-    
-}
-
-main {
     display: flex;
-    align-self: center;
+    justify-content: flex-start;
 }
 
 .gameboard {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border: 3px solid black;
+
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    background-color: red;
+    grid-gap: 3px;
+    gap: 2px;
+
+    background-color: grey;
 }
 
+.gameitem {
+    background-color: white;
+}
