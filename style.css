@@ -1,3 +1,7 @@
+html {
+    font-family: sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -16,6 +20,20 @@ body {
 
 header {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.display {
+    display: flex;
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+    align-items: center;
     justify-content: flex-start;
 }
 
@@ -35,4 +53,9 @@ header {
 
 .gameitem {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5em;
 }
